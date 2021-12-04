@@ -1,0 +1,102 @@
+------------------- LAB 2 
+
+##create two branches (dev and test) then create two files in dev
+##branch and push this changes to remote repo
+
+>>>> git branch dev 
+     git checkout dev
+     touch file_alber1  file_alber2
+     git add  file_alber1  file_alber2
+     git commit -m "add 2 files"
+
+     git branch test 
+     git checkout test
+     touch file_alber3  file_alber4
+     git add  file_alber3  file_alber4
+     git commit -m "add all files"
+
+     git puch origin dev 
+     git puch origin test
+
+_____________________________________________________________________________________________________________________________________
+
+## merge this changes on main branch and then push it to your
+## remote main branch.
+
+>>>> git checkout main
+     git merge main dev     
+     git merge main test     
+     git puch origin main
+_____________________________________________________________________________________________________________________________________
+ 
+## Tell me how to remove them locally and remotly.
+
+>>>> git push origin :test 
+     git push origin -d test 
+>>>> git push origin :dev
+     git push origin -d dev 
+
+_____________________________________________________________________________________________________________________________________
+
+## create an annoted tag with tagname v1.4.
+
+>>> git tag -a v1.4 -m "add tag"
+
+_____________________________________________________________________________________________________________________________________
+
+## push it to remote server.
+
+>>> git push origin v1.4 
+
+_____________________________________________________________________________________________________________________________________
+
+## tell me how to list tags locally.
+
+>>> git tag
+
+______________________________________________________________________________________________________________________________________
+
+## tell me how to list tags locally.
+
+
+>>> To delete a remote tag
+    git push origin --delete v1.4
+
+>>> To delete a local tag
+    git tag -d v1.4
+
+______________________________________________________________________________________________________________________________________
+## What is git rebase? Give me an example.
+
+>>> Rebasing is a process to reapply commits on top of another base trip. It is used to apply a sequence of commits from distinct branches into 
+    a final commit. It is an alternative of git merge command
+
+______________________________________________________________________________________________________________________________________
+## pull request .
+
+>>>  A pull request is a method of submitting contributions to an open development project.
+     A pull request occurs when a developer asks for changes committed to an external repository to be considered for inclusion in a project's 
+     main repository
+
+___________________________________________________________________________________________________________________________________________
+
+
+
+>>>> touch README.md
+     mkdir images
+     mkdir images
+     cp image_name /images
+     git add .
+     git commit -m "add img"
+     git push origin main
+   	
+     copy link of image 
+     open README on vsc
+     ![](https://github.com/AlberKaram/DevOps/blob/main/images/devops.png)
+     git add .
+     git commit -m "add img"
+     git push origin main
+
+
+
+
